@@ -216,7 +216,7 @@ function getRandomNumber(file) {
   rawFile.send(null);
 }
 
-getRandomNumber("./words.txt");
+getRandomNumber("words.txt");
 
 // check if user inputed word is exists in our list
 function validWord() {
