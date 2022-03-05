@@ -198,25 +198,16 @@ const jumpTiles = () => {
 Generate random Solution Word
 ************* */
 
-function getRandomNumber(file) {
-//   var rawFile = new XMLHttpRequest();
-//   rawFile.open("GET", file, false);
-//   rawFile.onreadystatechange = function () {
-//     if (rawFile.readyState === 4) {
-//       if (rawFile.status === 200 || rawFile.status == 0) {
-//         wordList = rawFile.responseText.split("\r\n");
+function getRandomNumber() {
+
         let randomIndex = Math.floor(Math.random() * completeWordlist.length - 1);
 
         // completeWordlist = rawFile.responseText;
 
         solutionWord = completeWordlist[randomIndex];
-//       }
-//     }
-//   };
-//   rawFile.send(null);
 }
 
-getRandomNumber("words.txt");
+getRandomNumber();
 
 // check if user inputed word is exists in our list
 function validWord() {
