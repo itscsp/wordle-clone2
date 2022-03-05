@@ -209,7 +209,7 @@ function getRandomNumber(file) {
 
         completeWordlist = rawFile.responseText;
 
-        solutionWord = wordList[randomIndex];
+        solutionWord = wordList[10];
       }
     }
   };
